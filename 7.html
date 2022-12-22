@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            width: 600px;
+            border: 1px black solid;
+            flex-direction: column;
+        }
+        .nav{
+            padding-left: 1rem;
+            border-bottom: 1px black solid; 
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+        }
+        .row-container{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+        }
+        .img{
+            flex-basis: 25%;
+            background-color: lightpink;
+        }
+        .para{
+            flex-basis: 75%;
+            background-color: powderblue;
+        }
+        .large-para{
+            flex-basis: 100%;
+            background-color: aquamarine;
+        }
+        .img, .para, .large-para{
+            height: 100px;
+            border: 1px black solid;
+        }
+    </style>
+    <title>Practice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Mock 1</div>
+        <div class="content">
+            <div class="row-container">
+                <div class="img"></div>
+                <div class="para"></div>           
+            </div>
+            <div class="row-container">
+                <div class="img"></div>
+                <div class="para"></div>           
+            </div>
+            <div class="row-container">
+                <div class="img"></div>
+                <div class="para"></div>           
+            </div>
+            <div class="row-container">
+                <div class="large-para"></div>           
+            </div>
+        </div>
+    </div>
+</body>
+</html>
